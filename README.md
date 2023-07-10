@@ -32,3 +32,6 @@ In this step, you need to compose the dataset for this project, in order to do t
  $ python data_generation.py
 ```
 
+## Training
+after creating training, validation and testing dataset and putting them in 'train', 'val' and 'test' folders, you can run 'dev.ipny' and train your model.
+
