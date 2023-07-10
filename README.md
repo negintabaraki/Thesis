@@ -28,7 +28,8 @@ In this step, you need to compose the dataset for this project, in order to do t
 4. Extract the datasets you downloaded in the matting folder.
 5. Download the pretrained models you need from this [link](https://drive.google.com/file/d/1NzEjOtC9GqHnnLJoYfAx-l1_B-kEjYnX/view?usp=share_link). 
 6. Extract the pretrained models that you downloaded in the matting folder.
-7. ```bash
+7.
+ ```bash
  $ python data_generation.py
 ```
 
