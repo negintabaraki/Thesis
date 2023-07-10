@@ -21,11 +21,12 @@ In this step, you need to compose the dataset for this project, in order to do t
 ```bash
  $ cd matting
 ```
+```bash
 $ git clone "remote URL"
 ```
-  ```bash
-  $ git clone "remote URL"
-  ```
+```bash
+$ git clone "remote URL"
+```
 
 6. Download the VideoMatte240K_JPEG_HD dataset from this [link](https://drive.google.com/file/d/1IUp_301x8BnPjE81QBzyLASn3ZSosUF6/view).
 7. Download the Backgournd dataset from this [link](https://drive.google.com/file/d/1FqD-HfwXwbeTswQEIFaQkaVWUh_i6cSy/view).
