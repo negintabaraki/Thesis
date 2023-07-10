@@ -9,7 +9,8 @@ Install the requirements:
   $ pip install -r requirements.txt
 ```
 
-## Craeting Data
+## Generating Data
+In this step, you need to compose the dataset for this project, in order to do this we use 2 available datasets for the task of video matting. we use the foreground frames of different videos and also a shuffle background for each frame and we compose our own dataset.
 
 #### please follow this steps:
 1.
@@ -17,7 +18,6 @@ Install the requirements:
 ```bash
  $ mkdir matting
 ```
-2.
 ```bash
  $ cd matting
 ```
