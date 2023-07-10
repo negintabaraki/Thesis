@@ -26,14 +26,9 @@ In this step, you need to compose the dataset for this project, in order to do t
 2. Download the VideoMatte240K_JPEG_HD dataset from this [link](https://drive.google.com/file/d/1IUp_301x8BnPjE81QBzyLASn3ZSosUF6/view).
 3. Download the Backgournd dataset from this [link](https://drive.google.com/file/d/1FqD-HfwXwbeTswQEIFaQkaVWUh_i6cSy/view). 
 4. Extract the datasets you downloaded in the matting folder.
-5. Download the pretrained models you need from this [link](https://drive.google.com/file/d/1NzEjOtC9GqHnnLJoYfAx-l1_B-kEjYnX/view?usp=share_link).
-  
-10. Extract the pretrained models that you downloaded in the matting folder.
-11.
-```bash
-  $ cd Video-Matting/video-segmentation/
-```
-```bash
-  $ python negin_video.py
+5. Download the pretrained models you need from this [link](https://drive.google.com/file/d/1NzEjOtC9GqHnnLJoYfAx-l1_B-kEjYnX/view?usp=share_link). 
+6. Extract the pretrained models that you downloaded in the matting folder.
+7. ```bash
+ $ python data_generation.py
 ```
 
