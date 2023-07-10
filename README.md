@@ -9,7 +9,7 @@ Install the requirements:
   $ pip install -r requirements.txt
 ```
 
-## Running Tests
+## Craeting Data
 
 #### please follow this steps:
 1.
@@ -22,20 +22,25 @@ Install the requirements:
  $ cd matting
 ```
 
-3)
+3.
 ```bash
   $ git clone "remote URL"
 ```
 
-
-4. Download the datasets you need from this [link](https://drive.google.com/file/d/1B9goBq2dY_5sndRbAWh2z6wwzmK_yd0j/view?usp=sharing).
+4.
+5.
+  ```bash
+  $ git clone "remote URL"
+  ```
+6. Download the VideoMatte240K_JPEG_HD dataset from this [link](https://drive.google.com/file/d/1IUp_301x8BnPjE81QBzyLASn3ZSosUF6/view).
+7. Download the Backgournd dataset from this [link](https://drive.google.com/file/d/1FqD-HfwXwbeTswQEIFaQkaVWUh_i6cSy/view).
   
-5. Extract the datasets that you downloaded in the matting folder.
+8. Extract the datasets you downloaded in the matting folder.
 
-6. Download the pretrained models you need from this [link](https://drive.google.com/file/d/1NzEjOtC9GqHnnLJoYfAx-l1_B-kEjYnX/view?usp=share_link).
+9. Download the pretrained models you need from this [link](https://drive.google.com/file/d/1NzEjOtC9GqHnnLJoYfAx-l1_B-kEjYnX/view?usp=share_link).
   
-7. Extract the pretrained models that you downloaded in the matting folder.
-8.
+10. Extract the pretrained models that you downloaded in the matting folder.
+11.
 ```bash
   $ cd Video-Matting/video-segmentation/
 ```
