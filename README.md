@@ -22,10 +22,14 @@ In this step, you need to compose the dataset for this project, in order to do t
  $ cd matting
 ```
 ```bash
-$ git clone "remote URL"
+ $ git clone "remote URL"
 ```
 ```bash
-$ git clone "remote URL"
+ $ git clone "remote URL"
+```
+```bash
+ $ mkdir data
+ $ cd data
 ```
 
 6. Download the VideoMatte240K_JPEG_HD dataset from this [link](https://drive.google.com/file/d/1IUp_301x8BnPjE81QBzyLASn3ZSosUF6/view).
