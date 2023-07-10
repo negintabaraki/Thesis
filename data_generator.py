@@ -60,14 +60,14 @@ import time
 import os
 
 # -------------------- here are my hyper-parameters --------------------
-video_dir = 'train'
+video_dir = 'data/train'
 background_dir = 'data/Backgrounds/'
 num_frames = 200       
 num_samples = 20
 n = 4
 vis = False
 #defien your desired ouput directory here
-out_dir = 'output'
+out_dir = 'data/output'
 # you can define if you want teh backgrounds to be shuffled for each frame or not. 
 # for creating training and validation data you need this flag to be True and for creating testing data this flag should be False.
 is_random = True
