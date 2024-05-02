@@ -76,7 +76,6 @@ def load_image(config:DataConfig, filename:str, toTensor)->Tensor:
     # print(filename)
     with open(filename, 'rb') as f:
         im = Image.open(f)
-        # im = im.convert("L")
         im = im.resize((config.downsample_width, config.downsample_height))
         im = toTensor(im)
         return im
@@ -97,25 +96,20 @@ class FrameDataset(pl.LightningDataModule):
         base_pred = load_image(self.config, segment[-1].components['result'], self.toTensor)
         # (1, h, w)
         target = load_image(self.config, segment[-1].components['pha'], self.toTensor)
-        # dict = {
-        #     'images': images,
-        #     'base_pred': base_pred,
-        #     'target': target
-        # }  
-        base_pred = base_pred.unsqueeze(1)
+ 
+        # base_pred = base_pred.unsqueeze(1)
 
         individual_tensors = torch.split(images, 1, dim=0)
         concatenated_images = []
-        # concatenated_image = torch.cat((individual_tensors[0], base_pred), dim=1)
-        concatenated_image = torch.cat((individual_tensors[0], individual_tensors[1], base_pred), dim=1)
-        concatenated_image = concatenated_image.squeeze(0)
-        # concatenated_image = torch.stack([individual_tensors[0].squeeze(0), individual_tensors[1].squeeze(0), base_pred_3ch.squeeze(0)], dim=0)
+        concatenated_image = torch.stack([individual_tensors[0].squeeze(0), individual_tensors[1].squeeze(0), individual_tensors[2].squeeze(0), individual_tensors[3].squeeze(0)], dim=1)
         # print(concatenated_image.shape)
         # print((concatenated_image.squeeze(0)).shape)
-        # print((concatenated_image.squeeze(1)).shape)
+        # print(base_pred.shape)
+        # print(target.shape)
         return{
 
-            'input': concatenated_image,
+            'input': concatenated_image.squeeze(0),
+            'base': base_pred,
             'output': target
         }
     
