@@ -1,5 +1,5 @@
 # Meta-Learning Methods for Video Matting
-![Demo Video](Pictures/video.gif)
+
 ## Overview
 This repository contains the implementation of a meta-learning approach for video matting, developed as part of my Master's Thesis at Ontario Tech University. The project explores novel methods like Boosting with Adapters (BwA) and Boosting using Ensemble (BuE) to address the complexities of video matting.
 
@@ -9,6 +9,7 @@ This repository contains the implementation of a meta-learning approach for vide
 - Performance evaluation on the VideoMatte240K dataset with advanced metrics like MAD, MSE, GRAD, and CONN.
 
 ---
+![Demo Video](Pictures/video.gif)
 
 ## Motivation and Background
 Video matting is a challenging problem involving the separation of foreground objects from the background in video frames. Unlike static images, video matting must account for temporal dynamics, motion, and memory constraints.
