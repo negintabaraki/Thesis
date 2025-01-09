@@ -44,7 +44,7 @@ This project uses the VideoMatte240K dataset:
 - **Test Set:**
   - 750 frames from 15 videos.
 
-![Data example](Pictures/data.png)
+![Data example](Pictures/d.png)
 Preprocessing includes data cleaning, augmentation, and temporal alignment.
 
 ---
