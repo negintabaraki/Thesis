@@ -67,7 +67,6 @@ In this step, you need to compose the dataset for this project, in order to do t
  $ mkdir matting
  $ cd matting
  $ git clone "remote URL"
- $ git clone "remote URL"
  $ mkdir data
 ```
 2. Download the VideoMatte240K_JPEG_HD dataset from this [link](https://drive.google.com/file/d/1IUp_301x8BnPjE81QBzyLASn3ZSosUF6/view).
@@ -81,8 +80,19 @@ In this step, you need to compose the dataset for this project, in order to do t
 ```
 
 ## Training
-after creating training, validation and testing dataset and putting them in 'train', 'val' and 'test' folders, you can run [dev.ipynb](https://github.com/negintabaraki/Thesis/blob/main/dev.ipynb) and train your model.
+### 1. Train the SMP Model
+The first step is to train the **SMP Model**, which generates alpha matte predictions. Use the following command to begin training:
 
+```bash
+python SMP_Model.py --train --data_path ./data --save_path ./models/smp_model.pth
+```
+
+### 2. Train the Ensemble Model
+After training the SMP Model, you can proceed to train the Ensemble Model. The Ensemble Model combines predictions from the SMP Model with additional fine-tuned models for enhanced performance. Use the following command:
+
+```bash
+python Ensemble.py --train --smp_model ./models/smp_model.pth --data_path ./data --save_path ./models/ensemble_model.pth
+```
 
 
 
