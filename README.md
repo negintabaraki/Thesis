@@ -20,7 +20,7 @@ This research extends image matting techniques to video by applying meta-learnin
 ## Methods
 
 ### Boosting with Adapters (BwA)
-![Boosting with Adapters](Pictures/bua_image.png)
+![Boosting with Adapters](Pictures/bue_image.png)
 - Fine-tunes pre-trained segmentation models (adapters) to improve alpha matte prediction.
 - Adapters correct errors iteratively, leveraging fixed backbone parameters for computational efficiency.
 
