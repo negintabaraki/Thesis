@@ -20,12 +20,12 @@ This research extends image matting techniques to video by applying meta-learnin
 ## Methods
 
 ### Boosting with Adapters (BwA)
-![Boosting with Adapters](path/to/bwa_image.png)
+![Boosting with Adapters](pictures/bwa_image.png)
 - Fine-tunes pre-trained segmentation models (adapters) to improve alpha matte prediction.
 - Adapters correct errors iteratively, leveraging fixed backbone parameters for computational efficiency.
 
 ### Boosting using Ensemble (BuE)
-![Boosting using Ensemble](path/to/bue_image.png)
+![Boosting using Ensemble](pictures/bue_image.png)
 - Combines multiple fine-tuned adapters using a Conv3D-based ensemble head.
 - Improves overall matting quality by aggregating outputs from multiple adapters.
 
